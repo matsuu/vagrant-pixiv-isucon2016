@@ -12,11 +12,14 @@ Pixivさんの[社内ISUCON2016](https://github.com/catatsuy/private-isu)とほ�
 - Vagrantfileがあるディレクトリで`vagrant up`を実行する
   - ベンチマーク用サーバ(bench)と参加者用サーバ(image)が起動
 - Ansibleによるプロビジョニングが完了したら`vagrant ssh`を実行する
-  - vagrant ssh bench
-  - vagrant ssh image
+```
+vagrant ssh bench
+vagrant ssh image
+```
 - ベンチマークを実行する
-  - sudo -u admin -i /opt/go/bin/benchmarker -t http://(imageのIPアドレス)/ -u /opt/go/src/github.com/catatsuy/private-isu/benchmarker/userdata"
-
+```
+sudo -u admin -i /opt/go/bin/benchmarker -t http://(imageのIPアドレス)/ -u /opt/go/src/github.com/catatsuy/private-isu/benchmarker/userdata"
+```
 ## 動作確認
 
 macOS + VirtualBox 5.0.20 + Vagrant 1.8.1で動作確認済です。
