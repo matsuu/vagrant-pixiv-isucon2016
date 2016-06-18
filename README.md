@@ -18,7 +18,7 @@ vagrant ssh image
 ```
 - ベンチマークを実行する
 ```
-sudo -u admin -i /opt/go/bin/benchmarker -t http://(imageのIPアドレス)/ -u /opt/go/src/github.com/catatsuy/private-isu/benchmarker/userdata"
+/opt/go/bin/benchmarker -t http://(imageのIPアドレス)/ -u /opt/go/src/github.com/catatsuy/private-isu/benchmarker/userdata
 ```
 ## 動作確認
 
